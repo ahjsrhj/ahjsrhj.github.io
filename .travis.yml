@@ -1,0 +1,27 @@
+language: node_js
+
+sudo: false
+
+node_js:
+    - 'stable'
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_766fd5c0ca36_key -iv $encrypted_766fd5c0ca36_iv
+  -in ssh_key.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp ssh_config ~/.ssh/config
+- npm install hexo-cli -g
+
+script:
+- hexo clean
+- hexo generate
+- cd public
+- git init
+- git config user.name "ahjsrhj"
+- git config user.email aha199277@qq.com
+- git add .
+- git commit -m "Update docs"
+- git remote add origin git@github.com:ahjsrhj/ahjsrhj.github.io.git
+- git push -f origin master
