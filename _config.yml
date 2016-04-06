@@ -71,4 +71,8 @@ theme: next
 deploy:
   type:
 
-duoshuo_shortname: ahjsrhj-github.duoshuo.com
+duoshuo_shortname: ahjsrhj.duoshuo.com
+duoshuo_share: true
+duoshuo_hotartical: true
+
+google_analytics: UA-76077011-1
