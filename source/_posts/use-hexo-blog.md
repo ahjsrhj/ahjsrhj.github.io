@@ -6,4 +6,7 @@ title: 将博客从WordPress迁移到Hexo
 
 ~~请参照[官方教程](https://hexo.io/zh-cn/docs/)~~
 
+
 # 使用Travis CI自动部署
+
+在使用的时候，发现每次写完文章都要手动推送到github,之后在使用hexo g -d进行部署，比较繁琐，因此发现了一个用于~~装逼~~自动构建的网站[Travis CI](https://travis-ci.org/)
