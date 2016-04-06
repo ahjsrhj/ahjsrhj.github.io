@@ -221,9 +221,9 @@ mathjax:
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
+  admin_enable: truepp
+  user_id: 10288965
+  admin_nickname: Hexer
 
 
 # Facebook SDK Support.
