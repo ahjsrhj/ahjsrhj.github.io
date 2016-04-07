@@ -2,7 +2,7 @@
 title: 将博客从WordPress迁移到Hexo
 date: 2016/04/06 20:44:25
 categories:
-- Github
+- 技术
 tags:
 - Hexo
 - Travis CI
