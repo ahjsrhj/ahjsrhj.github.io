@@ -8,7 +8,8 @@ comments: false
 # <center>关于作者</center>
 <center>![](http://7xsomm.com2.z0.glb.clouddn.com/head.png?imageMogr2/thumbnail/!20p) </center>
 
-<center> **rhj** 
+<!-- {% cq %} **rhj**  {% endcq %} -->
+<center> **rhj** <center>
 
 <center> *Android狗一只。 求实习工作中...*
 
