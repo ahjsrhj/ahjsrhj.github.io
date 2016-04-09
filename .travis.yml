@@ -10,10 +10,14 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 - cp ssh_config ~/.ssh/config
 - npm install hexo-cli -g
+- npm install gulp -g
+- npm install -d --save gulp gulp-clean gulp-load-plugins gulp-minify-css gulp-minify-html gulp-rename gulp-uglify gulp-shell
+
 script:
 - hexo clean
 - hexo generate
-- cd public
+- gulp
+- cd dst
 - git init
 - git config user.name "ahjsrhj"
 - git config user.email aha199277@qq.com
