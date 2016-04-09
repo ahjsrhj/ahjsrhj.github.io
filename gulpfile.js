@@ -2,7 +2,7 @@ var gulp = require('gulp'),
 	cssmin = require('gulp-minify-css'),
 	jsmin = require('gulp-uglify'),
 	htmlmin = require('gulp-minify-html');
-	
+
 
 
 gulp.task("css",function() {
@@ -23,6 +23,10 @@ gulp.task("html",function() {
     .pipe(gulp.dest("./dst/"));
 });
 
-gulp.task("default",["css","js","html"],function() {
+// gulp.task("default",["css","js","html"],function() {
+//     console.log("gulp task finished!");
+// });
+
+gulp.task("default",["css","js"],function() {
     console.log("gulp task finished!");
 });
