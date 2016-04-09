@@ -21,7 +21,7 @@ tags:
 
 可以看到，我的磁盘的**UUID**是`7AFE520E-E3A3-46CA-A971-7AC7D5B55331`
 
-第二步
+# 第二步
 编辑/etc/fstab文件
 `sudo vim /etc/fstab`
 写入以下内容
