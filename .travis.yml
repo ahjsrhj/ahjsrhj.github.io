@@ -17,7 +17,8 @@ script:
 - hexo clean
 - hexo generate
 - gulp
-- cd dst
+- cp -r dst/* public/
+- cd public
 - git init
 - git config user.name "ahjsrhj"
 - git config user.email aha199277@qq.com

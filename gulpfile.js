@@ -23,10 +23,6 @@ gulp.task("html",function() {
     .pipe(gulp.dest("./dst/"));
 });
 
-// gulp.task("default",["css","js","html"],function() {
-//     console.log("gulp task finished!");
-// });
-
-gulp.task("default",["css","js"],function() {
+gulp.task("default",["css","js","html"],function() {
     console.log("gulp task finished!");
 });
