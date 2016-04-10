@@ -24,7 +24,7 @@
 
 
 {% if theme.fancybox %}
-  <link href="{{ url_for(theme.vendors) }}/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  <link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/57071392-jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 {% endif %}
 
 
@@ -33,9 +33,9 @@
 {% endif %}
 
 
-<link href="{{ url_for(theme.vendors) }}/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/22979458-font-awesome.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
+<link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/89112560-main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
