@@ -78,7 +78,7 @@ branches:
     不应该添加到账户的`SSH and GPG keys`，这样能够限制key的权限只在当前项目。
 ## 加密Deploy Key
 1. 安装Travis命令行工具，并登录
-```
+``` shell
 $ gem install travis
 $ travis login --auto
 ```

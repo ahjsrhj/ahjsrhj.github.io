@@ -90,8 +90,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
-  Zhihu: zhihu
-
+  Zhihu: angellist
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
@@ -117,7 +116,7 @@ toc:
 sidebar:
   # Sidebar Position, available value: left | right
   #position: left
-  position: left 
+  position: left
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
