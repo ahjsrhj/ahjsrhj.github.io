@@ -29,7 +29,7 @@
 
 
 {% if theme.use_font_lato %}
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/93059971-ll.css" rel="stylesheet" type="text/css">
 {% endif %}
 
 

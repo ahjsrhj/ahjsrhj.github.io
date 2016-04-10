@@ -11,7 +11,6 @@ before_install:
 - cp ssh_config ~/.ssh/config
 - npm install hexo-cli -g
 - npm install gulp -g
-- npm install -d --save gulp gulp-clean gulp-load-plugins gulp-minify-css gulp-minify-html gulp-rename gulp-uglify gulp-shell
 
 script:
 - hexo clean
