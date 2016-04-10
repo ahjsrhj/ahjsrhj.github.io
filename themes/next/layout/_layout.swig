@@ -11,7 +11,7 @@
   <title>{% block title %}{% endblock %}</title>
 </head>
 
-<script src="jquery.js"></script>
+<script src="http://7xsomm.com2.z0.glb.clouddn.com/16-4-10/805974-jquery.js"></script>
 
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.min.js"></script>
     <script type="text/javascript">
