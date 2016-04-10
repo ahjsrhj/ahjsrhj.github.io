@@ -33,7 +33,7 @@
 {% endif %}
 
 
-<link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/22979458-font-awesome.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="{{ url_for(theme.vendors) }}/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
 <link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/89112560-main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
