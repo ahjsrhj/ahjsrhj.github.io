@@ -8,17 +8,18 @@ comments: false
 # <center>关于作者</center>
 <center>![](http://7xsomm.com2.z0.glb.clouddn.com/head.png?imageMogr2/thumbnail/!20p) </center>
 
-<center> **任洪建** <center>
+{% cq %}
+**任洪建**
 
-<center> *Android狗一只。 求实习工作中...*
+*Android狗一只。 求实习工作中...*
 
-<center> *mail: <aha199277@qq.com>*
+*mail: <aha199277@qq.com>*
 
-<center> *QQ: 945935700*
+*QQ: 945935700*
 
-<center> *坐标: 六安*
-<center> [*Github*](https://github.com/ahjsrhj)
-
+ *坐标: 六安*
+[*Github*](https://github.com/ahjsrhj)
+ {% endcq %}
 
 
 
