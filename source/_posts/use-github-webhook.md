@@ -1,6 +1,6 @@
 ---
 title: 将网站转到vps上做镜像存储
-date: 2016-04-11 16:55:29
+date: 2016-04-9 16:55:29
 categories:
 - 技术
 tags:
@@ -27,5 +27,52 @@ tags:
 点击**Update webhook**即可添加。添加完成后Github会发送一条请求检测配置是否成功，因为服务器端还未配置，所以请求会失败。接下来配置完服务器端刷新即可。
 
 # 2. 服务器端配置
+在这里如果不想~~其实是懒~~自己撸一个轮子，可以使用[github-webhook-handler](https://github.com/rvagg/github-webhook-handler)来进行服务端的处理。
+``` bash
+$ npm install -g github-webhook-handler
+```
+接下来是监听程序listener.js *这里就用到了刚刚设置的Secret*
 
-//todo
+``` js
+var http = require('http')
+var createHandler = require('github-webhook-handler')
+var handler = createHandler({ path: '/', secret: '我刚刚设置的secret' })
+
+function run_cmd(cmd, args, callback) {
+  var spawn = require('child_process').spawn;
+  var child = spawn(cmd, args);
+  var resp = "";
+
+  child.stdout.on('data', function(buffer) { resp += buffer.toString(); });
+  child.stdout.on('end', function() { callback (resp) });
+}
+
+http.createServer(function (req, res) {
+  handler(req, res, function (err) {
+    res.statusCode = 404
+    res.end('no such location')
+  })
+}).listen(7777)
+
+handler.on('error', function (err) {
+  console.error('Error:', err.message);
+})
+
+handler.on('push', function (event) {
+  console.log('Received a push event for %s to %s',
+    event.payload.repository.name,
+    event.payload.ref);
+  if (event.payload.ref == 'refs/heads/master') {
+    run_cmd('sh', ['./git.sh'], function(text){ console.log(text) });
+  }
+})
+
+```
+在这里当收到github发送来的请求，检测头里包含的信息是否为`refs/heads/master`，匹配上之后，执行同目录下的`git.sh`更新网站信息。
+下面是`git.sh`:
+``` bash
+cd /usr/share/nginx/html
+git fetch origin master
+git reset --hard origin/master
+```
+enjoy it~

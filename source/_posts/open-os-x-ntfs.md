@@ -25,15 +25,15 @@ tags:
 编辑/etc/fstab文件
 `sudo vim /etc/fstab`
 写入以下内容
-``` bash
+``` Bash
 UUID=7AFE520E-E3A3-46CA-A971-7AC7D5B55331 none ntfs rw,auto,nobrowse
 ```
 最后一个**unbrowse*很重要，因为这个代表了在finder里不显示这个分区，这个选项非常重要，如果不打开的话挂载是不会成功的。
 之后重启电脑就能识别，如果是移动硬盘，重新拔插就可以了。
 但是有个很大的问题，这个分区在finder中不显示了，这里建议使用软连接将/Values目录链接到用户目录下。
 
-``` bash
-ln -s /Volumes ~/Volumes
+``` Bash
+$ ln -s /Volumes ~/Volumes
 ```
 
 之后点开用户目录就能找到磁盘了。

@@ -32,7 +32,7 @@ tags:
 - 什么是.travis.yml文件？
 - 简单来说，Travis CI通过Docker自动部署一个虚拟化平台，在上面安装一系列软件环境来模拟你的编译环境，这个文件就是来高数Travis CI怎么去构建这个环境。直接贴出来我的
 
-```
+``` bash
  language: node_js
 sudo: false
 node_js:
@@ -66,7 +66,7 @@ branches:
 
 ## 生成Deploy Key
 1. 使用`ssh-key`制作一个 SSH key
-	```
+	``` bash
     $ ssh-keygen -t rsa -C "your_email@example.com"
     ```
 生成过程中把passphrase留空。
@@ -78,23 +78,23 @@ branches:
     不应该添加到账户的`SSH and GPG keys`，这样能够限制key的权限只在当前项目。
 ## 加密Deploy Key
 1. 安装Travis命令行工具，并登录
-``` shell
+``` bash
 $ gem install travis
 $ travis login --auto
 ```
 在登录时可能需要你的github帐号信息。
 2. 加密
 将刚刚生成的ssh_key复制到hexo blog根目录,在blog目录下执行
-```
+``` bash
 $ travis encrypt-file ssh_key --add
 ```
 若是提示找不到repo,使用`r`指令手动指定repo
-```
+``` bash
 $ travis encrypt-file ssh_key --add -r ahjsrhj/ahjsrhj.github.io
 ```
 
 之后Travis CI网站上对应repo设置里能看到两个值，同时你的.travis.yml文件中应该自动出现了一句类似这样的代码
-```
+``` bash
 - openssl aes-256-cbc -K $encrypted_8926b8c4a31e_key -iv $encrypted_8926b8c4a31e_iv
   -in ssh_key.enc -out ~/.ssh/id_rsa -d
 ```
@@ -102,7 +102,7 @@ $ travis encrypt-file ssh_key --add -r ahjsrhj/ahjsrhj.github.io
 
 ## 设置SSH并同步
 再根目录建立`ssh_config`文件，设置Travis上的SSH
-```
+``` bash
 Host github.com
   User git
   StrictHostKeyChecking no
