@@ -6,7 +6,8 @@
     window.Promise = null;
   }
 </script>
-<script type="text/javascript" src="//7xsomm.com2.z0.glb.clouddn.com/index.js?__inline=true"></script>
+
+<script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?__inline=true"></script>
 <script type="text/javascript" src="//cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js?__inline=true"></script>
 <script type="text/javascript" src="//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js?__inline=true"></script>
 <script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.3/velocity.min.js?__inline=true"></script>

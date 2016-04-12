@@ -29,13 +29,13 @@
 
 
 {% if theme.use_font_lato %}
-  <link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/17098065-fonts.css" rel="stylesheet" type="text/css">
+  <link href="https://o5iqfmxl6.qnssl.com/16-4-10/17098065-fonts.css" rel="stylesheet" type="text/css">
 {% endif %}
 
 
 <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
-<link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/89112560-main.css?__inline=true" rel="stylesheet" type="text/css" />
+<link href="https://o5iqfmxl6.qnssl.com/16-4-10/89112560-main.css?__inline=true" rel="stylesheet" type="text/css" />
 
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
