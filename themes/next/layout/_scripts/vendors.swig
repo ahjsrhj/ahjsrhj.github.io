@@ -1,10 +1,5 @@
 {%
   set js_vendors = [
-    'jquery/index.js?v=2.1.3',
-    'fastclick/lib/fastclick.min.js?v=1.0.6',
-    'jquery_lazyload/jquery.lazyload.js?v=1.9.7',
-    'velocity/velocity.min.js',
-    'velocity/velocity.ui.min.js'
   ]
 %}
 
@@ -19,6 +14,12 @@
     window.Promise = null;
   }
 </script>
+<script type="text/javascript" src="//7xsomm.com2.z0.glb.clouddn.com/index.js?v=2.1.3"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js?v=1.0.6"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.3/velocity.min.js"></script>
+<script type="text/javascript" src="//cdn.bootcss.com/velocity/1.2.3/velocity.ui.min.js"></script>
+
 
 {% for vendor in js_vendors %}
   <script type="text/javascript" src="{{ url_for(theme.vendors) }}/{{ vendor }}"></script>

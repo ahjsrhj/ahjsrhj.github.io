@@ -24,7 +24,7 @@
 
 
 {% if theme.fancybox %}
-  <link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/57071392-jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+  <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
 {% endif %}
 
 
@@ -33,7 +33,7 @@
 {% endif %}
 
 
-<link href="//7xsomm.com2.z0.glb.clouddn.com/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 <link href="//7xsomm.com2.z0.glb.clouddn.com/16-4-10/89112560-main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 

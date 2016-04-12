@@ -11,16 +11,6 @@
   <title>{% block title %}{% endblock %}</title>
 </head>
 
-<script src="http://apps.bdimg.com/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.min.js"></script>
-    <script type="text/javascript">
-      jQuery(function() {
-          jQuery("#post img").lazyload({
-            placeholder:"http://www.arao.me/loading.gif",
-              effect:"fadeIn"
-            });
-          });
-</script>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
 
