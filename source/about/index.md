@@ -6,7 +6,7 @@ comments: false
 ---
 
 # <center>关于作者</center>
-<center>![](http://7xsomm.com2.z0.glb.clouddn.com/head.png?imageMogr2/thumbnail/!20p) </center>
+<center>![](https://o5iqfmxl6.qnssl.com/head.png?imageMogr2/thumbnail/!20p) </center>
 
 {% cq %}
 **任洪建**
