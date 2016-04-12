@@ -7,15 +7,16 @@ tags:
 - Hexo
 - Travis CI
 ---
-![](http://7xsomm.com2.z0.glb.clouddn.com/16-4-7/22905034.jpg-700)
 
 一直想去学习markdown的使用，最近发现了一个静态博客[Hexo](https://hexo.io/zh-cn/)很好用，趁着最近清闲下来，学着将博客转移到hexo上,使用静态页面。
 
-<!-- more -->
 # 安装教程
 
 ~~请参照[官方教程](https://hexo.io/zh-cn/docs/)~~
 
+<!-- more -->
+
+![](http://7xsomm.com2.z0.glb.clouddn.com/16-4-7/22905034.jpg-700)
 
 # 使用Travis CI自动部署
 
