@@ -29,7 +29,7 @@
 
 
 {% if theme.use_font_lato %}
-  <link href="http://7xsomm.com2.z0.glb.clouddn.com/fonts.css" rel="stylesheet" type="text/css">
+  <link href="https://o5iqfmxl6.qnssl.com/fonts.css" rel="stylesheet" type="text/css">
 {% endif %}
 
 
