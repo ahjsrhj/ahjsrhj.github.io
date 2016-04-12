@@ -7,6 +7,7 @@ tags:
 - Hexo
 - Travis CI
 ---
+![](https://o5iqfmxl6.qnssl.com/16-4-7/22905034.jpg-700)
 
 一直想去学习markdown的使用，最近发现了一个静态博客[Hexo](https://hexo.io/zh-cn/)很好用，趁着最近清闲下来，学着将博客转移到hexo上,使用静态页面。
 
@@ -16,7 +17,6 @@ tags:
 
 <!-- more -->
 
-![](http://7xsomm.com2.z0.glb.clouddn.com/16-4-7/22905034.jpg-700)
 
 # 使用Travis CI自动部署
 
@@ -75,7 +75,7 @@ branches:
 
     生成之后把public key里的信息复制到你的repo的`Deploy keys`那里，如下。
 
-![](http://7xsomm.com2.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-06%20%E4%B8%8B%E5%8D%888.03.38-f.png-hex)
+![](https://o5iqfmxl6.qnssl.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-06%20%E4%B8%8B%E5%8D%888.03.38-f.png-hex)
     不应该添加到账户的`SSH and GPG keys`，这样能够限制key的权限只在当前项目。
 ## 加密Deploy Key
 1. 安装Travis命令行工具，并登录
