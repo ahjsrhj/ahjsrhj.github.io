@@ -3,6 +3,7 @@ title:
   category: 分类
   tag: 标签
   guestbook: 留言
+  friend: 友链
   about: 关于
 
 author: 博主
@@ -16,6 +17,7 @@ menu:
   search: 搜索
   commonweal: 公益404
   guestbook: 留言
+  friend: 友链
 
 
 sidebar:

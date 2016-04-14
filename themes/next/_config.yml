@@ -29,7 +29,8 @@ menu:
   #categories: /categories
   archives: /archives
   tags: /tags
-  guestbook: /guestbook
+  # guestbook: /guestbook
+  friend: /friend
   about: /about
   #commonweal: /404.html
 
@@ -47,6 +48,7 @@ menu_icons:
   #categories: th
   tags: tags
   guestbook: comment
+  friend: link
   archives: archive
   #commonweal: heartbeat
 

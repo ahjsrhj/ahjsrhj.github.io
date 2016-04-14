@@ -1,3 +1,4 @@
+
 <div class="copyright" >
   {% set current = date(Date.now(), "YYYY") %}
   &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
@@ -6,8 +7,8 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
-</div>
 
+</div>
 
 
 <div class="powered-by">
@@ -15,8 +16,5 @@
 </div>
 
 <a class="theme-link" href="http://hexo.io">皖ICP备16006159号</a>
-
-
-
 
 {% block footer %}{% endblock %}
