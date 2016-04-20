@@ -61,10 +61,11 @@ MyClass myClass = new MyClass();
 ## 1.4 对象头部大小
 对象头结构如下[来源](http://mail.openjdk.java.net/pipermail/hotspot-runtime-dev/2008-May/000147.html)
 
-| mark word | class pointer | array size (opt) | padding |
-| --------- | ------------- | ---------------- | ------- |
-
-
+|                           | mark word | class pointer | array size (opt) | padding |
+| :-----------------------: | :-------: | :-----------: | :--------------: | :-----: |
+|          **32位**          |   4byte   |     4byte     |    ~~4byte~~     |         |
+| **64位+UseCompressedOops** |   8byte   |     4byte     |    ~~4byte~~     |         |
+| **64位-UseCompressedOops** |   8byte   |     8byte     |    ~~4byte~~     |         |
 
 > 每个对象都有一个mark work头部，以及一个引用，指向类的信息。在32位JVM上，markword 4个字节，整个头部有8字节大小。
 
@@ -298,3 +299,12 @@ void deleteRandomNode(Node *cur) {
   	delete next;
 }
 ```
+
+
+
+
+
+
+
+
+
