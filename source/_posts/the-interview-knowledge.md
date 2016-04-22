@@ -302,6 +302,73 @@ void deleteRandomNode(Node *cur) {
 
 
 
+# 3.JAVA
+
+## 3.1 JAVA虚拟机
+
+1. 原子性
+2. 可见性
+3. 有序性
+
+### 3.1.1 原子性
+
+> ​    原子性就是一个操作（可能是需要多步完成的复合操作）不能被打断，一旦开始执行直到执行完其他线程或多核都必须等待。比如”i++”表达式，就不是原子的，汇编后会发现由三条指令（读取，修改，写入）完成，每一条指令完成后都可能被中断。
+
+由Java内存模型来直接保证的原子性变量操作包括`read`、`load`、`use`、`assign`、`store`和`write`六个，大致可以认为基础数据类型的访问和读写是具备原子性的。如果应用场景需要一个更大范围的原子性保证，Java内存模型还提供了`lock`和`unlock`操作来满足这种需求，尽管虚拟机未把`lock`与`unlock`操作直接开放给用户使用，但是却提供了更高层次的字节码指令`monitorenter`和`monitorexit`来隐匿地使用这两个操作，这两个字节码指令反映到Java代码中就是同步块---`synchronized`关键字，因此在`synchronized`块之间的操作也具备原子性。
+
+
+
+
+
+
+
+
+
+## 3.2 Object中的方法
+
+如下，共有9种方法。
+
+```java
+public final native Class<?> getClass();
+public native int hashCode();
+public boolean equals(Object obj) {
+        return (this == obj);
+}
+protected native Object clone() throws CloneNotSupportedException;
+public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+}
+public final native void notify();
+public final native void notifyAll();
+public final native void wait(long timeout) throws InterruptedException;
+public final void wait(long timeout, int nanos) throws InterruptedException {
+    if (timeout < 0) {
+		throw new IllegalArgumentException("timeout value is negative");
+    }
+	if (nanos < 0 || nanos > 999999) {
+		throw new IllegalArgumentException("nanosecond timeout value out of range");
+	}
+	if (nanos > 0) {
+		timeout++;
+	}
+	wait(timeout);
+}
+public final void wait() throws InterruptedException {
+	wait(0);
+}
+ protected void finalize() throws Throwable { }
+```
+
+1. `getClass():` 返回此 Object 的运行时类。 
+2. `hashCode():` 返回该对象的哈希值。
+3. `equals():` 指示其他某个对象是否与此对象“相等”。 
+4. `clone():` 创建并返回此对象的一个副本。
+5. `toString():` 返回对象的字符串表示。
+6. `notify():` 唤醒在次对象监视器上等待的单个线程*(注意的是在调用此方法的时候，并不能确切的唤醒某一个等待状态的线程，而是由JVM确定唤醒哪个线程，而且不是按优先级)*。
+7. `ntifyAll():` 唤醒在此对象监视器上等待的所有线程。 
+8. `wait():` 在其他线程调用此对象的 notify() 方法或 notifyAll() 方法，或者超过指定的时间量前，导致当前线程等待。 
+9. `finalize():` 当垃圾回收器确定不存在对该对象的更多引用时，由对象的垃圾回收器调用此方法。 
+
 
 
 
