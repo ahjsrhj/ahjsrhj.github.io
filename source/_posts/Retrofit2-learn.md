@@ -195,6 +195,52 @@ call.enqueue(new Callback<Model>() {
 ```
 就是这么简单轻松有木有！！！
 
+# 0x3 注解说明
+
+## 1. @GET
+
+向目的URL发送GET请求，其中可以包含String类型参数，该参数附加到主URL后面。
+
+> ``` java
+> @GET("/api/data/Android/500/1")
+> ```
+
+当参数中有`{}`花括号包含的字符串，表示需要使用`@Path`进行替换。
+
+> ``` java
+> @GET("/api/data/{type}/500/1")
+> Call<Model> get(@Path String type);
+> //之后在代码中使用如下调用
+> Call<Model> call = api.get("Android");
+> //即 /api/data/Android/500/1
+> ```
+
+当目标URL形如`http://www.exapmle.com/list?page=1`时，这里就不能使用`@Path`了，需要使用查询参数`@Query`
+
+> ``` java
+> @GET("/list")
+> Call<ResponseBody> list(@Query("page") int page);
+> //之后在代码中使用如下调用
+> Call<ResponseBody> call = api.list(1);
+> //即 /list?page=1
+>
+> //当查询为多个时
+> @GET("/list")
+> Call<ResponseBody> list(@Query("category") String.. categories);
+> //之后在代码中使用如下调用
+> Call<ResponseBody> call = api.list("bar", "baz");
+> //即 /list?category=bar&category=baz
+> ```
+
+当需要查询多个参数时，需要使用`@QueryMap`
+
+> ``` java
+> GET("/search")
+> Call<ResponseBody> list(@QueryMap Map<String, String> filters);
+> //---
+> Call<ResponseBody> call = api.list(ImmutableMap.of("foo", "bar", "kit", "kat"));
+> //即 /serach?foo=bar&kit=kat
+> ```
 
 
 
@@ -202,8 +248,54 @@ call.enqueue(new Callback<Model>() {
 
 
 
+# 0x04 Tips
 
+## 1. 开启okhttp的log功能
 
+首先在APP的`build.gradle`中配置依赖:
 
+``` java
+compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+```
 
-j
+代码中做如下改动即可:
+
+```java
+HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
+
+Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(URL)
+                .client(client)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+```
+
+Logcat如下：
+
+```
+04-30 19:18:05.284 6638-6707/cn.imrhj.mydemo D/OkHttp: --> GET http://www.games-cube.com/combat/api/login?username=xxxx&password=xxxxx http/1.1
+04-30 19:18:05.284 6638-6707/cn.imrhj.mydemo D/OkHttp: --> END GET
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: <-- 200 OK http://www.games-cube.com/combat/api/login?username=xxxx&password=xxxx (58ms)
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: Cache-Control: private
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: Transfer-Encoding: chunked
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: Content-Type: application/json; charset=utf-8
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: Server: Microsoft-IIS/8.0
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: Set-Cookie: ASP.NET_SessionId=e301ckyfpbzfbajkcepvnnu3; path=/; HttpOnly
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: X-AspNetMvc-Version: 5.2
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: X-AspNet-Version: 4.0.30319
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: X-Powered-By: ASP.NET
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: Date: Sat, 30 Apr 2016 11:18:05 GMT
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: OkHttp-Sent-Millis: 1462015085317
+04-30 19:18:05.342 6638-6707/cn.imrhj.mydemo D/OkHttp: OkHttp-Received-Millis: 1462015085339
+04-30 19:18:05.343 6638-6707/cn.imrhj.mydemo D/OkHttp: {"key":"f8716ab6-712a-4622-be5b-fd950326acb2","code":"1"}
+04-30 19:18:05.343 6638-6707/cn.imrhj.mydemo D/OkHttp: <-- END HTTP (57-byte body)
+04-30 19:18:05.350 6638-6638/cn.imrhj.mydemo D/MainAcitivty: onResponse: key:f8716ab6-712a-4622-be5b-fd950326acb2, code:1
+```
+
+## 2. 在创建Retrofit时URL的要求
+
+这里必须传入网址里的主网址，不能包含/后面的内容
+
+比如说https://imrhj.cn/2016/Retrofit2-learn/，URL要设置为https://imrhj.cn/，后面的放到注解里。或者注解里为空，URL里放全路径。
