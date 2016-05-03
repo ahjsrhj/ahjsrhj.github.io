@@ -11,9 +11,7 @@ tags:
 
 <center>![](https://o5iqfmxl6.qnssl.com/md/1462285906609.png)</center>
 
-```
 <!--more-->
-```
 
 
 
