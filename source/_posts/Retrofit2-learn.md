@@ -29,7 +29,7 @@ tags:
 - [Simple XML](http://simple.sourceforge.net/): com.squareup.retrofit2:converter-simplexml
 - Scalars (primitives, boxed, and String): com.squareup.retrofit2:converter-scalars
 
-比如添加 Gson，需要在 Gradle 里添加`compile ''com.squareup.retrofit2:converter-gson:2.0.2'`
+比如添加 Gson，需要在 Gradle 里添加`compile 'com.squareup.retrofit2:converter-gson:2.0.2'`
 
 # 0x2 使用
 我们以[干货集中营](http://gank.io)的 API 接口为例。比如获取10张~~福利~~照片的 api :`http://gank.io/api/data/福利/10/1`
