@@ -9,6 +9,14 @@ tags:
 - StatusBar
 ---
 
+<center>![](https://o5iqfmxl6.qnssl.com/md/1462285906609.png)</center>
+
+```
+<!--more-->
+```
+
+
+
 关于透明状态栏~~(沉浸式状态栏)~~大家应该都有用过，从Android 4.4开始新加入的`windowTranslucentStatus`属性可以将`StatusBar`设置为透明，即在`v19`的`style.xml`中添加
 
 ``` xml
