@@ -201,46 +201,53 @@ call.enqueue(new Callback<Model>() {
 
 向目的URL发送GET请求，其中可以包含String类型参数，该参数附加到主URL后面。
 
-> ``` java
-> @GET("/api/data/Android/500/1")
-> ```
+``` java
+@GET("/api/data/Android/500/1")
+```
 
 当参数中有`{}`花括号包含的字符串，表示需要使用`@Path`进行替换。
 
-> ``` java
-> @GET("/api/data/{type}/500/1")
-> Call<Model> get(@Path String type);
-> //之后在代码中使用如下调用
-> Call<Model> call = api.get("Android");
-> //即 /api/data/Android/500/1
-> ```
+``` java
+@GET("/api/data/{type}/500/1")
+Call<Model> get(@Path String type);
+//之后在代码中使用如下调用
+ Call<Model> call = api.get("Android");
+ //即 /api/data/Android/500/1
+```
 
 当目标URL形如`http://www.exapmle.com/list?page=1`时，这里就不能使用`@Path`了，需要使用查询参数`@Query`
 
-> ``` java
-> @GET("/list")
-> Call<ResponseBody> list(@Query("page") int page);
-> //之后在代码中使用如下调用
-> Call<ResponseBody> call = api.list(1);
-> //即 /list?page=1
->
-> //当查询为多个时
-> @GET("/list")
-> Call<ResponseBody> list(@Query("category") String.. categories);
-> //之后在代码中使用如下调用
-> Call<ResponseBody> call = api.list("bar", "baz");
-> //即 /list?category=bar&category=baz
-> ```
+``` java
+ @GET("/list")
+ Call<ResponseBody> list(@Query("page") int page);
+ //之后在代码中使用如下调用
+ Call<ResponseBody> call = api.list(1);
+ //即 /list?page=1
 
-当需要查询多个参数时，需要使用`@QueryMap`
+ //当查询为多个时
+ @GET("/list")
+ Call<ResponseBody> list(@Query("category") String.. categories);
+ //之后在代码中使用如下调用
+ Call<ResponseBody> call = api.list("bar", "baz");
+ //即 /list?category=bar&category=baz
+ 
+//当为多组时
+@GET("/list")
+Call<ResponseBody> list(@Query("username") String username, @Query("password") String password);
+//之后在代码中
+Call<ResponseBody> call = api.list("admin", "123456");
+//即 /list?username=admin&password=123456
+```
 
-> ``` java
-> GET("/search")
-> Call<ResponseBody> list(@QueryMap Map<String, String> filters);
-> //---
-> Call<ResponseBody> call = api.list(ImmutableMap.of("foo", "bar", "kit", "kat"));
-> //即 /serach?foo=bar&kit=kat
-> ```
+当需要查询多个参数时，也可以使用`@QueryMap`
+
+``` java
+GET("/search")
+Call<ResponseBody> list(@QueryMap Map<String, String> filters);
+//---
+Call<ResponseBody> call = api.list(ImmutableMap.of("foo", "bar", "kit", "kat"));
+//即 /serach?foo=bar&kit=kat
+```
 
 
 
