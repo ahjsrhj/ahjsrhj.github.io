@@ -300,9 +300,3 @@ Logcat如下：
 04-30 19:18:05.343 6638-6707/cn.imrhj.mydemo D/OkHttp: <-- END HTTP (57-byte body)
 04-30 19:18:05.350 6638-6638/cn.imrhj.mydemo D/MainAcitivty: onResponse: key:f8716ab6-712a-4622-be5b-fd950326acb2, code:1
 ```
-
-## 2. 在创建Retrofit时URL的要求
-
-这里必须传入网址里的主网址，不能包含/后面的内容
-
-比如说https://imrhj.cn/2016/Retrofit2-learn/，URL要设置为https://imrhj.cn/，后面的放到注解里。或者注解里为空，URL里放全路径。
