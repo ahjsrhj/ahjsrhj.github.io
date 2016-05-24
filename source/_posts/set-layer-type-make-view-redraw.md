@@ -3,7 +3,7 @@ title: 自定义View setLayerType()方法会引起View重绘
 date: 2016-05-24 21:43:13
 categories:
 - 技术
-  tags:
+tags:
 - Android
 - Java
 - View
@@ -18,4 +18,3 @@ categories:
 然而在使用过程中，我发现View开始不停的重绘，开始以为是`LAYER_TYPE_SOFTWARE`的特性，因为将其换成`LAYER_TYPE_HARDWARE`就不会发生重绘，~~当然这样做以后上图中的阴影也没有了。。~~然后发现`setLayerType`方法被我放在了onDraw方法里。。才发现这个方法会引起View重绘，View重绘又再次调用这个方法，于是
 
 # Boom！！！！！！！！！！！！！
-
