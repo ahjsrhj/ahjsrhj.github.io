@@ -22,6 +22,8 @@ tags:
 
 本文以在一个demo中使用rxjava + retrofit2进行网络请求进行说明。
 
+<!--more-->
+
 
 
 首先在`app`的`gradle`文件中配置依赖，添加如下项:
