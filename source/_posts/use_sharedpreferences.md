@@ -46,16 +46,16 @@ WTF！！！
 
 - PACKAGE_NAME_prefs.xml:
 
-  > ```java
-  > PreferenceManager.getDefaultSharedPreferences(context);
-  > XSharedPreferences(PACKAGE_NAME);
-  > ```
+  ``` java
+  PreferenceManager.getDefaultSharedPreferences(context);
+  XSharedPreferences(PACKAGE_NAME);
+  ```
 
 - name.xml:
 
-  > ```java
-  > context.getSharedPreferences(name, MODE);
-  > XSharedPreferences(PACKAGE_NAME, name);
-  > ```
+  ```java
+  context.getSharedPreferences(name, MODE);
+  XSharedPreferences(PACKAGE_NAME, name);
+  ```
 
 以上~
