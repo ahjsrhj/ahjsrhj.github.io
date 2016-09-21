@@ -6,9 +6,9 @@ type: "friend"
 
  {% cq %}
  ### _喵 PASS～(\*T T)ﾉ_
- [OneAPM](http://www.oneapm.com)     
- [Shura自留地](https://cxfer.cn/)       
+ [Shura自留地](https://cxfer.cn/) 
  [月亮岛修行客](http://www.kysida.cn/)
+ [Howard的IT工作室](https://blog.ixnet.work)
 
  {% endcq %}
 
@@ -16,4 +16,4 @@ type: "friend"
 
  <br/>
  >最近访客
- <div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
+ > <div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
