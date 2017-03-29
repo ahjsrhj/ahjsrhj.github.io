@@ -13,6 +13,8 @@ before_install:
 - npm install gulp -g
 
 script:
+- git submodule init themes/yilia
+- git submodule update
 - hexo clean
 - hexo generate
 - gulp
