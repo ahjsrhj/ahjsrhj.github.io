@@ -1,7 +1,7 @@
 ---
 layout: post
 slug: "game"
-title: "游戏们~"
+title: "游戏大本营"
 noDate: "true"
 ---
 
