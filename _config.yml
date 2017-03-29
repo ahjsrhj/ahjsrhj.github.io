@@ -6,7 +6,7 @@
 title: Hexer
 subtitle:
 description: 十年饮冰，难凉热血。
-author: rhj
+author: Hexer
 avatar: https://o5iqfmxl6.qnssl.com/16-4-11/48813896.jpg
 language: zh-Hans
 timezone: Asia/Shanghai
@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: game_data/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -76,3 +76,32 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 100
+
+# 配置评论
+disqus_shortname: hexer
+
+
+# theme yilia setting
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true

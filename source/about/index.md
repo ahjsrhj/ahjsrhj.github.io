@@ -8,7 +8,6 @@ comments: false
 # <center>关于作者</center>
 <center>![](https://o5iqfmxl6.qnssl.com/head.png?imageMogr2/thumbnail/!20p) </center>
 
-{% cq %}
 **任洪建**
 
 *Android狗一只。 终点科技实习中...*
@@ -19,7 +18,6 @@ comments: false
 
  *坐标: 杭州*
 [*Github*](https://github.com/ahjsrhj)
- {% endcq %}
 
 
 
