@@ -2,24 +2,22 @@
 title: about
 date: 2016-04-06 20:51:36
 type: "about"
-comments: false
+comments: true
 ---
 
 # <center>关于作者</center>
-<center>![](https://o5iqfmxl6.qnssl.com/head.png?imageMogr2/thumbnail/!20p) </center>
-
-**任洪建**
-
-*Android狗一只。 终点科技实习中...*
-
-*mail: <aha199277@qq.com>*
-
-*QQ: 945935700*
-
- *坐标: 杭州*
-[*Github*](https://github.com/ahjsrhj)
+<center>![](https://o5iqfmxl6.qnssl.com/blog/2xuct.jpeg?imageMogr2/thumbnail/!25p) </center>
 
 
+<center> **任洪建** </center>
+<br/>
+<center> *Android狗一只。 终点科技实习中...* </center>
+<center> *mail: <hexrhj@gmail.com>* </center>
+<center> *QQ: 945935700* </center>
+<center> *坐标: 杭州* </center>
+<center> [*Github*](https://github.com/ahjsrhj) </center>
+<br/>
+<br/>
 
 ## 项目情况：
 >- [**自动登录**](https://github.com/ahjsrhj/AutoLogin):针对校园网开发的自动登录应用，检测wifi连接后自动发送登录请求.
