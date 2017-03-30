@@ -7,8 +7,10 @@ tags:
 - Android
 - Java
 - StatusBar
+description: "Android透明状态栏探索"
 ---
-<!--more-->
+
+<!-- more -->
 
 <center>![](https://o5iqfmxl6.qnssl.com/md/1462285906609.png)</center>
 
