@@ -7,8 +7,8 @@ title: Hexer
 subtitle:
 description: 十年饮冰，难凉热血。
 author: Hexer
-avatar: https://o5iqfmxl6.qnssl.com/16-4-11/48813896.jpg
-language: zh-Hans
+avatar: https://o5iqfmxl6.qnssl.com/blog/2xuct.jpeg
+language: en
 timezone: Asia/Shanghai
 
 # URL
@@ -25,7 +25,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: :lang
+# i18n_dir: :lang
 skip_render: [game_data/**,google452735c9160015c5.html]
 
 # Writing
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yelee
+theme: material
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -79,7 +79,9 @@ baidusitemap:
 feed:
   type: atom
   path: atom.xml
-  limit: 100
+  limit: 20
+  hub:
+  content:
 
 # 配置评论
 # disqus_shortname: hexer

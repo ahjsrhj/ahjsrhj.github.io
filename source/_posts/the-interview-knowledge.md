@@ -1,6 +1,7 @@
 ---
 title: 面试的可能知识点总结
 date: 2016/04/18 10:33:05
+thumbnail: https://o5iqfmxl6.qnssl.com/16-4-23/66383221.jpg
 categories:
 - 技术
 tags:
@@ -9,9 +10,6 @@ tags:
 - 对象
 ---
 
-
-
-<center>![1][]</center>
 
 # 1. Java对象大小与引用的大小
 

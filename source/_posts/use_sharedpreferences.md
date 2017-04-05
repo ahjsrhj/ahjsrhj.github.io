@@ -1,6 +1,7 @@
 ---
 title: 使用SharedPreferences遇到的一些问题
 date: 2016-07-22 13:15:53
+thumbnail: https://o5iqfmxl6.qnssl.com/2016-07-25_2c29dd5f0724b916044cbb7e410b7338.jpg-700
 categories:
 - 技术
 tags:
@@ -9,8 +10,6 @@ tags:
 - 网络请求
 - Xposed
 ---
-
-![2016-07-25_2c29dd5f0724b916044cbb7e410b7338.jpg](https://o5iqfmxl6.qnssl.com/2016-07-25_2c29dd5f0724b916044cbb7e410b7338.jpg-700)
 
 # 0x0 背景
 

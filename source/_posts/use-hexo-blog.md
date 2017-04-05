@@ -1,13 +1,13 @@
 ---
 title: 将博客从WordPress迁移到Hexo
 date: 2016/04/06 20:44:25
+thumbnail: https://o5iqfmxl6.qnssl.com/16-4-7/22905034.jpg-700
 categories:
 - 技术
 tags:
 - Hexo
 - Travis CI
 ---
-![](https://o5iqfmxl6.qnssl.com/16-4-7/22905034.jpg-700)
 
 一直想去学习markdown的使用，最近发现了一个静态博客[Hexo](https://hexo.io/zh-cn/)很好用，趁着最近清闲下来，学着将博客转移到hexo上,使用静态页面。
 
@@ -15,7 +15,6 @@ tags:
 
 ~~请参照[官方教程](https://hexo.io/zh-cn/docs/)~~
 
-<!-- more -->
 
 
 # 使用Travis CI自动部署
