@@ -57,6 +57,7 @@ thumbnail:
 background:
     purecolor: "#E9EBEC"
     # bgimg: "https://www.dujin.org/sys/bing/1366.php"
+    bgimg: "https://unsplash.it/1366/768/?random"
     bing:
         enable: false
         parameter: color=white
@@ -65,7 +66,7 @@ background:
 img:
     logo: "https://o5iqfmxl6.qnssl.com/blog/qwo82.png"
     avatar: "https://o5iqfmxl6.qnssl.com/blog/2xuct.jpeg?imageMogr2/thumbnail/!20p"
-    daily_pic: "https://www.dujin.org/sys/bing/1366.php"
+    daily_pic: "https://unsplash.it/600/340/?random"
     sidebar_header: ""
     footerico: "/img/footer/footer_ico-"
     random_thumbnail: "/img/random/material-"
