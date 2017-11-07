@@ -1,0 +1,23 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    About: /about/
+    Game: /game/
+    # Weibo: http://weibo.com/sunchongsheng
+    GitHub: https://github.com/ahjsrhj
+    Rss: /atom.xml
+
+favicon: https://o5iqfmxl6.qnssl.com/691504853723_.pic_hd.jpg?roundPic/radius/250
+logo: https://o5iqfmxl6.qnssl.com/691504853723_.pic_hd.jpg?roundPic/radius/250
+
+# Comment
+# e.g disqus: seansun
+disqus: hexer
+duoshuo:
+
+# Analytics
+# google-analytics:
+ga: UA-109294877-1
+
+# Copyright Infomation
+startyear: 2015

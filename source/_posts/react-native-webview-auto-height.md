@@ -8,10 +8,13 @@ tags:
 - React Native
 - WebView
 ---
+![](https://o5iqfmxl6.qnssl.com/blog/w49ap.jpg)
 
 # 0x01 前言
 
 在使用 `React Native` 的时候碰到一个需求，即将 `WebView` 与其他 `View` 进行混排，但是 `React Native` 本身并不像 `Android` 那样有类似 `wrap_content` 的属性进行高度控制，只能将高度写死。但是不同的页面高度肯定不一样的，这样就带来了一个问题: 怎么动态获取渲染后的网页高度并给 `WebView` 设置?
+
+<!-- more -->
 
 # 0x02 思路
 
