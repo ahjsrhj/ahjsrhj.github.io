@@ -6,8 +6,7 @@ comments: true
 ---
 
 # <center>关于作者</center>
-<center>![](https://o5iqfmxl6.qnssl.com/blog/2xuct.jpeg?imageMogr2/thumbnail/!25p) </center>
-
+<center>![](https://o5iqfmxl6.qnssl.com/691504853723_.pic_hd.jpg?roundPic/radius/250)</center> 
 
 <center> **任洪建** </center>
 <br/>
