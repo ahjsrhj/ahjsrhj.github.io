@@ -29,3 +29,12 @@ tags:
 # 0x02 Failed to Validate Acceptance Level. Failed to Check Acceptance Level: None
 
 这个问题比较好解决，重启笔记本，进入BIOS，将系统安全引导([Secure Boot](http://www.ruanyifeng.com/blog/2013/01/secure_boot.html)）关掉即可。
+
+
+# 0x03 PCPU 0 locked up. failed to ack TLB invalidate
+
+之后就是碰到了这个问题，搜索一番没有任何[收获](https://kb.vmware.com/s/article/2091670)，猜测是因为我安装的系统版本为 ESXi 6.5, 而在**0x01**中附加网卡驱动所用到的打包工具所支持的最高版本为 ESXi5.5，重新下载5.5版的镜像并把驱动打入即可。
+
+# 0x04 尝试升级至 ESXi 6.5
+
+先说一下结果，以失败告终。
