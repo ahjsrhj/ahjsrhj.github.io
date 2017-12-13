@@ -1,10 +1,10 @@
 ---
 title: Android TextInputLayout 使用时的坑
-date: 2017-11-25 15:36:41
+date: 2017-12-13 10:24:36
 categories:
 - 技术
 tags:
-- ESXi
+- Android
 ---
 ![](https://o5iqfmxl6.qnssl.com//blog/gif/Untitled.mov.gif)
 在使用 `TextInputLayout` 编写一个登录界面时，发现一个深坑，记录下来。
