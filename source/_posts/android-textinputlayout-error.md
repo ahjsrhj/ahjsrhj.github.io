@@ -15,7 +15,8 @@ tags:
   android:layout_height="wrap_content"
   android:layout_marginEnd="50dp"
   android:layout_marginStart="50dp"
-  android:layout_marginTop="20dp">   <EditText  android:id="@+id/etMail"
+  android:layout_marginTop="20dp">
+ <EditText  android:id="@+id/etMail"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:hint="@string/mail"
@@ -24,7 +25,8 @@ tags:
   android:lines="1"
   android:singleLine="true"
   android:textColor="@android:color/white"
-  android:textSize="14sp" /> </android.support.design.widget.TextInputLayout>
+  android:textSize="14sp" /> 
+</android.support.design.widget.TextInputLayout>
 ```
 然而，此时 `TextInputLayout` 的未激活状态下hint的文字颜色为黑色，无法调整，查找[资料](https://stackoverflow.com/questions/30546430/how-to-change-the-floating-label-color-of-textinputlayout)得知，需要在style里添加一个theme，并复写`textColorHint`属性，如下
 ``` xml
@@ -51,5 +53,6 @@ Google一番找到的解决方案对我无效。
  <item name="android:textSize">14sp</item>
  <item name="colorAccent">@color/colorRedAccept</item>
  <item name="android:colorControlNormal">@color/colorWhite3</item>
- <item name="android:colorControlActivated">@color/colorRedText</item> </style>
+ <item name="android:colorControlActivated">@color/colorRedText</item> 
+</style>
 ```
