@@ -4,8 +4,9 @@ menu:
     About: /about/
     Game: /game/
     # Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/ahjsrhj
-    Rss: /atom.xml
+    GITHUB: https://github.com/ahjsrhj
+    RSS: /atom.xml
+    FRIEND: /friend/
 
 favicon: https://o5iqfmxl6.qnssl.com/691504853723_.pic_hd.jpg?roundPic/radius/250
 logo: https://o5iqfmxl6.qnssl.com/691504853723_.pic_hd.jpg?roundPic/radius/250
