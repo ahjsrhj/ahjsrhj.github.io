@@ -15,9 +15,14 @@ if theme.duoshuo
 if theme.disqus
     #disqus_thread
     script.
+        var comments = '#{page.comments}';
+        if (comments === false) {
+            return;
+        }
         var disqus_shortname = '#{theme.disqus}';
         var disqus_identifier = '#{page.path}';
         var disqus_title = '#{page.title}';
+        var test = 'test'
         var disqus_url = '#{config.url}/#{page.path}';
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
