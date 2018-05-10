@@ -15,6 +15,7 @@ before_install:
 script:
 - hexo clean
 - hexo generate
+- gulp -v
 - gulp
 - cp -r dst/* public/
 - cd public
