@@ -13,6 +13,10 @@ before_install:
 - npm install gulp -g
 
 script:
+- rm -rf node_modules/
+- npm i --no-optional
+- npm dedupe
+- npm up
 - hexo clean
 - hexo generate
 - gulp -v
