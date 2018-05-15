@@ -19,7 +19,7 @@ description: "Android透明状态栏探索"
 
 之后布局的内容会顶到顶栏。但是这种情况下`ActionBar`也会被顶栏遮挡，如图:
 
-<center>![](https://o5iqfmxl6.qnssl.com/md/1462282804958.png)</center>
+<center>![](https://ws3.sinaimg.cn/large/006tKfTcgy1frc664asj1j30ay049gll.jpg)</center>
 
 此时有两种解决方法，一是给根布局添加`android:fitsSystemWindows="true"`属性，将`StatusBar`空出来。但是。。。
 

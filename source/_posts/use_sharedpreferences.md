@@ -10,7 +10,7 @@ tags:
 - 网络请求
 - Xposed
 ---
-![](https://o5iqfmxl6.qnssl.com/2016-07-25_2c29dd5f0724b916044cbb7e410b7338.jpg-700)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1frc677c5v9j30jg0bjgn6.jpg)
 
 # 0x0 背景
 

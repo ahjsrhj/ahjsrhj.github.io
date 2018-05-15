@@ -9,7 +9,7 @@ tags:
 - Travis CI
 ---
 
-![](https://o5iqfmxl6.qnssl.com/16-4-7/22905034.jpg-700)
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1frc67mbkoej30jg0cr3zc.jpg)
 
 一直想去学习markdown的使用，最近发现了一个静态博客[Hexo](https://hexo.io/zh-cn/)很好用，趁着最近清闲下来，学着将博客转移到hexo上,使用静态页面。
 
@@ -72,7 +72,7 @@ branches:
 1. 使用`ssh-key`制作一个 SSH key
 	``` bash
     $ ssh-keygen -t rsa -C "your_email@example.com"
-    ```
+  ```
 生成过程中把passphrase留空。
 2. 添加Key 到repo中
 

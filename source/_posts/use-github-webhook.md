@@ -10,7 +10,7 @@ tags:
 - Github webhook
 ---
 
-![](https://o5iqfmxl6.qnssl.com/16-4-11/71857159.jpg-700)
+![](https://ws4.sinaimg.cn/large/006tKfTcgy1frc67cxvbhj30jg0a8gng.jpg)
 
 >由于Github Page这两天间歇性抽风，因此打算将Hexo在我的腾讯云服务器上做一份镜像存储。考虑到每次更新博文都要手动传上去太麻烦，最开始打算使用Travis CI在自动部署的时候同时向我的VPS上传输一份文件镜像，但是这样的话需要使用ftps,Travis CI上还要为私匙加密。折腾起来太麻烦。
 

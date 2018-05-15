@@ -10,7 +10,7 @@ tags:
 - 对象
 ---
 
-![](https://o5iqfmxl6.qnssl.com/16-4-23/66383221.jpg)
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1frc671arxuj30hs09mgow.jpg)
 
 <!-- more -->
 

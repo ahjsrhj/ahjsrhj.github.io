@@ -6,7 +6,7 @@ categories:
 tags:
 - Android
 ---
-![](https://o5iqfmxl6.qnssl.com//blog/gif/Untitled.mov.gif)
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1frc65tg4weg30dw09baqf.gif)
 在使用 `TextInputLayout` 编写一个登录界面时，发现一个深坑，记录下来。
 简单的布局文件如下所示
 ``` xml

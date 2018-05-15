@@ -8,7 +8,7 @@ tags:
 - BroadcastReceiver
 ---
 
-![](https://o5iqfmxl6.qnssl.com/blog/img/20180515174131_PRL9BV_android-o-hero.1913b82c89274bfa9e3072ee0f1add4d.png)
+![android-o-hero.1913b82c89274bfa9e3072ee0f1add4d.png](https://i.loli.net/2018/05/15/5afaacd581c22.png)
 
 今天来说一下 Android O 中对于隐式广播的变更，完整的变更在[**这里**](https://developer.android.com/about/versions/oreo/android-8.0-changes)可以看到。
 
