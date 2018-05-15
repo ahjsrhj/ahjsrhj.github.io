@@ -17,7 +17,7 @@ description: "在Android O中获取BuildProperties文件信息"
 
 # 0x00 起因
 
-升级App的 `targetSdkVersion`至26之后~~(本想直接升到27的，然而项目中使用的个推即使是最新的SDK仍不支持Android 8.1的`channelId`，会导致运行在Android 8.1的机器上崩溃)~~，发现原有的一个获取 Android 系统 `BuildProperties`信息的类无法正常工作了，初始化时会抛出异常
+升级App的 `targetSdkVersion`至27之后，发现原有的一个获取 Android 系统 `BuildProperties`信息的类无法正常工作了，初始化时会抛出异常
 
 ```Log
 java.io.FileNotFoundException: /system/build.prop (Permission denied)
