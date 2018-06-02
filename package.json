@@ -25,6 +25,7 @@
     "hexo-renderer-jade": "^0.4.1",
     "hexo-renderer-marked": "git+https://github.com/hexojs/hexo-renderer-marked.git#291b47a985e9e18af0f51f7dcbcc83f9ba6202bc",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "valine": "^1.1.9-beta9"
   }
 }

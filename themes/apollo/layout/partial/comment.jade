@@ -29,3 +29,24 @@ if theme.disqus
             })();
         }
     script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
+
+if theme.valine
+    script.
+        var comments = '#{page.comments}';
+        if (comments === 'true') {
+            (function() {
+                var vl = document.createElement('script');
+                vl.src = '//cdn1.lncld.net/static/js/3.0.4/av-min.js';
+                vl.async = true;
+                (document.getElementsByTagName('head')[0] 
+                || document.getElementsByTagName('body')[0]).appendChild(vl);
+                var vl2 = document.createElement('script');
+                vl2.src = '//unpkg.com/valine/dist/Valine.min.js';
+                vl2.async = true;
+                (document.getElementsByTagName('head')[0] 
+                || document.getElementsByTagName('body')[0]).appendChild(vl2);
+                var commitDiv = document.createElement('div');
+                commitDiv.id='comment';
+                document.getElementsByTagName('footer')[0].appendChild(commitDiv);
+            })();
+        }

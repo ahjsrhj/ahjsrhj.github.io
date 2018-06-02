@@ -8,3 +8,23 @@ if ga
         | (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',
         != '"' + ga + '"'
         | ,'auto');ga('send','pageview');
+
+script.
+    var comments = '#{page.comments}';
+    if (comments === 'true') {
+        (function() {
+            setTimeout(() => {
+                new Valine({
+                    el: '#comment' ,
+                    notify:false, 
+                    verify:false, 
+                    appId: 'lMIQlAfa6UoprWfiEDOceMSz-gzGzoHsz',
+                    appKey: 'KiGYzc5UupBdbac67AJA54dJ',
+                    placeholder: '来都来了，说点啥不 ٩(●˙▿˙●)۶…⋆ฺ',
+                    path:window.location.pathname, 
+                    avatar:'identicon',
+                    guest_info: ['nick','link']
+                });
+            }, 1000)
+        })();
+    }
