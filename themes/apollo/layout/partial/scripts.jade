@@ -13,18 +13,27 @@ script.
     var comments = '#{page.comments}';
     if (comments === 'true') {
         (function() {
-            setTimeout(() => {
-                new Valine({
-                    el: '#comment' ,
-                    notify:false, 
-                    verify:false, 
-                    appId: 'lMIQlAfa6UoprWfiEDOceMSz-gzGzoHsz',
-                    appKey: 'KiGYzc5UupBdbac67AJA54dJ',
-                    placeholder: '来都来了，说点啥不 ٩(●˙▿˙●)۶…⋆ฺ',
-                    path:window.location.pathname, 
-                    avatar:'identicon',
-                    guest_info: ['nick','link']
-                });
-            }, 1000)
+            let _tt = 20;
+            let _tc = setInterval(() => {
+                try {
+                    new Valine({
+                        el: '#comment' ,
+                        notify:false, 
+                        verify:false, 
+                        appId: 'lMIQlAfa6UoprWfiEDOceMSz-gzGzoHsz',
+                        appKey: 'KiGYzc5UupBdbac67AJA54dJ',
+                        placeholder: '来都来了，说点啥不 ٩(●˙▿˙●)۶…⋆ฺ',
+                        path:window.location.pathname, 
+                        avatar:'identicon',
+                        guest_info: ['nick','link']
+                    });
+                    clearInterval(_tc)
+                } catch(e) {
+                    _tt--;
+                    if (_tt < 1) {
+                        clearInterval(_tc)
+                    }
+                }
+            }, 500)
         })();
     }
