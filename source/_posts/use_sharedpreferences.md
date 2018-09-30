@@ -1,7 +1,7 @@
 ---
 title: 使用SharedPreferences遇到的一些问题
 date: 2016-07-22 13:15:53
-thumbnail: https://o5iqfmxl6.qnssl.com/2016-07-25_2c29dd5f0724b916044cbb7e410b7338.jpg-700
+thumbnail: https://i.loli.net/2018/09/30/5bb06e18c7921.png
 categories:
 - 技术
 tags:
@@ -38,7 +38,7 @@ WTF！！！
 
 `adb shell` ，cd 到安装目录找到配置文件，文件名称是`包名.xml`，运行目标程序之后，当前目录下又多了个`包名_prefs.xml`文件。。
 
-<center>![2016-07-25_2016548158703.jpg](https://o5iqfmxl6.qnssl.com/2016-07-25_2016548158703.jpg)</center>
+<center>![2016-07-25_2016548158703.jpg](https://ws2.sinaimg.cn/large/006tNc79gy1fvrj7wp18cj3045069glm.jpg)</center>
 
 # 0x2 总结
 

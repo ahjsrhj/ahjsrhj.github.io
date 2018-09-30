@@ -1,7 +1,7 @@
 ---
 title: Android透明状态栏实践
 date: 2016-05-03 21:26:19
-thumbnail: https://o5iqfmxl6.qnssl.com/blog/c101i.png
+thumbnail: https://i.loli.net/2018/09/30/5bb06d7f2de7e.png
 categories:
 - 技术
 tags:
@@ -23,7 +23,7 @@ description: "Android透明状态栏探索"
 
 此时有两种解决方法，一是给根布局添加`android:fitsSystemWindows="true"`属性，将`StatusBar`空出来。但是。。。
 
-<center>![](https://o5iqfmxl6.qnssl.com/md/1462283156106.png)</center>
+<center>![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7r4n27j30al03y0sq.jpg)</center>
 
 咳，大概是打开的方式不对，换种方式再来。
 
@@ -80,10 +80,10 @@ protected void onCreate(Bundle savedInstanceState) {
 
 - Android 4.4：
 
-<center>![](https://o5iqfmxl6.qnssl.com/md/1462284534931.png)</center>
+<center>![](https://ws1.sinaimg.cn/large/006tNc79gy1fvrj7s2bpoj30b003zdfs.jpg)</center>
 
 - Android 4.1:
 
-<center>![](https://o5iqfmxl6.qnssl.com/md/1462284770585.png)</center>
+<center>![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7shq23j30ba052mx8.jpg)</center>
 
 

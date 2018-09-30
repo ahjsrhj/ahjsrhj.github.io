@@ -1,7 +1,7 @@
 ---
 title: 将博客从WordPress迁移到Hexo
 date: 2016/04/06 20:44:25
-thumbnail: https://o5iqfmxl6.qnssl.com/16-4-7/22905034.jpg-700
+thumbnail: https://i.loli.net/2018/09/30/5bb06e4fb858b.png
 categories:
 - 技术
 tags:
@@ -78,7 +78,7 @@ branches:
 
     生成之后把public key里的信息复制到你的repo的`Deploy keys`那里，如下。
 
-![](https://o5iqfmxl6.qnssl.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-06%20%E4%B8%8B%E5%8D%888.03.38-f.png-hex)
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7vte7gj30sr0lfwg6.jpg)
     不应该添加到账户的`SSH and GPG keys`，这样能够限制key的权限只在当前项目。
 ## 加密Deploy Key
 1. 安装Travis命令行工具，并登录

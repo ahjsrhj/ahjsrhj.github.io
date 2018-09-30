@@ -1,7 +1,7 @@
 ---
 title: 自定义View setLayerType()方法会引起View重绘
 date: 2016-05-24 21:43:13
-thumbnail: https://o5iqfmxl6.qnssl.com/md/1464097728554.png
+thumbnail: https://i.loli.net/2018/09/30/5bb06dbd0fe68.png
 categories:
 - 技术
 tags:

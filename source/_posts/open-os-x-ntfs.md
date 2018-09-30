@@ -1,7 +1,7 @@
 ---
 title: 打开Mac OS X原生NTFS功能
 date: 2016/04/08 10:48:43
-thumbnail: https://o5iqfmxl6.qnssl.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-12%20%E4%B8%8A%E5%8D%8810.29.29.png
+thumbnail: https://i.loli.net/2018/09/30/5bb06d997154b.png
 categories:
 - 技巧
 tags:

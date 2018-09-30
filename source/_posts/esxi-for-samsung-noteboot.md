@@ -20,7 +20,7 @@ tags:
 - 解压并打开 **ESXi-Customizer**，运行后弹出软件窗口第一个选择ESXi安装镜像，我的是5.5，第二个选择下载的网卡驱动。这里注意如果看不到 .vib 驱动文件，需要在弹出选择文件窗口中选择文件类型。之后生成即可。
 
 
-> 需要注意的是，这款软件不支持Win10，用记事本打开脚本，搜索 **unsupport**，在那一行前面添加**REM **即可![](https://ws1.sinaimg.cn/large/006tKfTcgy1frc66d7d88j30v706gt96.jpg)
+> 需要注意的是，这款软件不支持Win10，用记事本打开脚本，搜索 **unsupport**，在那一行前面添加**REM **即可![](https://ws1.sinaimg.cn/large/006tNc79gy1fvrj7u0t6kj30v706ggpu.jpg)
 生成后建议使用[rufus](http://rufus.akeo.ie/?locale=zh_CN)进行u盘的烧录。
 
 

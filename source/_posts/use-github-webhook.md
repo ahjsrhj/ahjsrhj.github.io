@@ -1,7 +1,7 @@
 ---
 title: 将网站转到vps上做镜像存储
 date: 2016-04-9 16:55:29
-thumbnail: https://o5iqfmxl6.qnssl.com/16-4-11/71857159.jpg-700
+thumbnail: https://i.loli.net/2018/09/30/5bb06e3b7e916.png
 categories:
 - 技术
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # 1. 在github上设置webhook
 打开你的项目，选择Settings->Webhooks & services->Add webhook，在这个页面添加一个webhook。如图所示。
-![](https://o5iqfmxl6.qnssl.com/16-4-11/52379394.jpg-700)
+![](https://ws2.sinaimg.cn/large/006tNc79gy1fvrj7uvw8oj30jg0dudii.jpg)
 - **Payload URL**: 在此输入服务器地址，比如我的是http://imrhj.tk:7777
 - **Content type**: 这一项保持默认不要动，因为我们接下来要用到`github-webhook-handler`去监听Gtihub发送到服务器上的请求，而`github-webhook-handler`智能解析json数据。~~当然如果你要自己实现服务端监听的话，当我没说~~
 - **Secret**: 密匙信息，建议输入一段随机字符串。用来进行身份鉴别，防止别人恶意向你的服务器发送请求。在接下来服务器端要用到。

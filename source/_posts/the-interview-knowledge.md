@@ -1,7 +1,7 @@
 ---
 title: 面试的可能知识点总结
 date: 2016/04/18 10:33:05
-thumbnail: https://o5iqfmxl6.qnssl.com/16-4-23/66383221.jpg
+thumbnail: https://i.loli.net/2018/09/30/5bb06e00f0649.png
 categories:
 - 技术
 tags:
@@ -552,9 +552,9 @@ void bubble_sort(int a[], int n) {
 >
 > 若初始文件是反序的，需要进行`n-1`趟排序。每趟排序要进行`n-i`次关键字的比较`(1≤i≤n-1)`，且每次比较都必须移动记录三次来达到交换记录位置。在这种情况下，比较和移动次数均达到最大值：
 >
-> <center>![](http://f.hiphotos.baidu.com/baike/s%3D171/sign=f38fc3a1bb389b503cffe455b434e5f1/838ba61ea8d3fd1f846a7b85324e251f95ca5f2a.jpg) </center>
+> <center>![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7svjanj304r00z0n7.jpg) </center>
 >
-> <center>![](http://a.hiphotos.baidu.com/baike/s%3D186/sign=41bfe6dab119ebc4c4787291b427cf79/7af40ad162d9f2d36fa2fd50abec8a136227ccda.jpg) </center>
+> <center>![](https://ws2.sinaimg.cn/large/006tNc79gy1fvrj7tal3zj305600z0q1.jpg) </center>
 >
 > 冒泡排序的最坏时间复杂度为`O(n^2)`.
 > 综上，因此冒泡排序总的平均时间复杂度为`O(n^2)`.
@@ -656,11 +656,11 @@ Donald Shell最初建议增量选择为`2/n`并且对增量取**半**直到增�
 
 
 
-[1]: https://o5iqfmxl6.qnssl.com/16-4-23/66383221.jpg
-[sort1]: https://o5iqfmxl6.qnssl.com/16-4-23/29445357.jpg
-[sort2]: https://o5iqfmxl6.qnssl.com/16-4-23/62551407.jpg
+[1]: https://i.loli.net/2018/09/30/5bb06c7783b27.png
+[sort1]: https://i.loli.net/2018/09/30/5bb06cc8e5de2.gif
+[sort2]: https://i.loli.net/2018/09/30/5bb06ce8d30ec.gif
 
-[sort4]: https://o5iqfmxl6.qnssl.com/md/1461465386831.gif
-[sort5]: https://o5iqfmxl6.qnssl.com/16-4-23/41203511.jpg
-[sort6]: https://o5iqfmxl6.qnssl.com/md/1461465668753.gif
+[sort4]: https://i.loli.net/2018/09/30/5bb06cffbba9c.gif
+[sort5]: https://i.loli.net/2018/09/30/5bb06d2c60614.gif
+[sort6]: https://i.loli.net/2018/09/30/5bb06d4246832.gif
 

@@ -1,7 +1,7 @@
 ---
 title: Retrofit2学习笔记
 date: 2016/04/16 15:56:44
-thumbnail: https://o5iqfmxl6.qnssl.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-16%20%E4%B8%8B%E5%8D%883.05.14.png
+thumbnail: https://i.loli.net/2018/09/30/5bb06dbd0fe68.png
 categories:
 - 技术
 tags:
