@@ -8,7 +8,7 @@ html(lang=config.language)
                 a.logo-link(href=url_for())
                     img(src=url_for(theme.logo) alt="logo")
                 include nav
-                script(src='//o5iqfmxl6.qnssl.com//blog/js/canvas-nest-check.min.js')
+                script(src=url_for('js/canvas-nest-check.js'))
             main.container
                 block container
             footer

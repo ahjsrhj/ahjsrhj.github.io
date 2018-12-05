@@ -2,14 +2,18 @@ menu:
     Blog: /
     Archive: /archives/
     About: /about/
-    Game: /game/
+    # Game: /game/
     # Weibo: http://weibo.com/sunchongsheng
     GITHUB: https://github.com/ahjsrhj
     # RSS: /atom.xml
     FRIEND: /friend/
 
-favicon: https://i.loli.net/2018/09/30/5bb06e7c3a31e.png
-logo: https://i.loli.net/2018/09/30/5bb06e8ed7771.png
+favicon: https://i.loli.net/2018/12/05/5c07807cb76f9.png
+    # https://i.loli.net/2018/12/05/5c077e66b3ba7.png
+    # https://i.loli.net/2018/09/30/5bb06e7c3a31e.png
+logo: https://i.loli.net/2018/12/05/5c07807cb76f9.png
+    # https://i.loli.net/2018/12/05/5c077e66b3ba7.png
+    # https://i.loli.net/2018/09/30/5bb06e8ed7771.png
 
 # Comment
 # e.g disqus: seansun
