@@ -10,7 +10,7 @@ tags:
 - 网络请求
 - Xposed
 ---
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1frc677c5v9j30jg0bjgn6.jpg)
+![](https://i.loli.net/2019/06/14/5d0397d8e9d3d38898.png)
 
 # 0x0 背景
 
@@ -38,7 +38,7 @@ WTF！！！
 
 `adb shell` ，cd 到安装目录找到配置文件，文件名称是`包名.xml`，运行目标程序之后，当前目录下又多了个`包名_prefs.xml`文件。。
 
-<center>![2016-07-25_2016548158703.jpg](https://ws2.sinaimg.cn/large/006tNc79gy1fvrj7wp18cj3045069glm.jpg)</center>
+<center>![2016-07-25_2016548158703.jpg](https://i.loli.net/2019/06/14/5d0397fe1ece313070.png)</center>
 
 # 0x2 总结
 

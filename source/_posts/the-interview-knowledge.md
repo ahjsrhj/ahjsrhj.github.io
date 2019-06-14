@@ -10,7 +10,7 @@ tags:
 - 对象
 ---
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1frc671arxuj30hs09mgow.jpg)
+![1560516499989.png](https://i.loli.net/2019/06/14/5d0397968d9e384940.png)
 
 <!-- more -->
 
@@ -552,9 +552,9 @@ void bubble_sort(int a[], int n) {
 >
 > 若初始文件是反序的，需要进行`n-1`趟排序。每趟排序要进行`n-i`次关键字的比较`(1≤i≤n-1)`，且每次比较都必须移动记录三次来达到交换记录位置。在这种情况下，比较和移动次数均达到最大值：
 >
-> <center>![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7svjanj304r00z0n7.jpg) </center>
+> <center>![](https://i.loli.net/2019/06/14/5d0397adee98870969.png) </center>
 >
-> <center>![](https://ws2.sinaimg.cn/large/006tNc79gy1fvrj7tal3zj305600z0q1.jpg) </center>
+> <center>![](https://i.loli.net/2019/06/14/5d0397be10a5685845.png) </center>
 >
 > 冒泡排序的最坏时间复杂度为`O(n^2)`.
 > 综上，因此冒泡排序总的平均时间复杂度为`O(n^2)`.

@@ -13,4 +13,4 @@ noDate: "true"
 Unity 官方教程，第二个~
 
 [SpaceShooter](/game_data/SpaceShooter/)
-[![](https://ws2.sinaimg.cn/large/006tNc79gy1fvrj7y96h4j30ru0h47j6.jpg)](/game_data/SpaceShooter/)
+[![](https://i.loli.net/2019/06/14/5d039897e0ace81196.png)](/game_data/SpaceShooter/)

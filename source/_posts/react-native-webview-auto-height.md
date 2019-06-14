@@ -8,7 +8,7 @@ tags:
 - React Native
 - WebView
 ---
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1frc66pupv7j30qy0e5jsi.jpg)
+![](https://i.loli.net/2019/06/14/5d035d4578e9031465.png)
 
 # 0x01 前言
 

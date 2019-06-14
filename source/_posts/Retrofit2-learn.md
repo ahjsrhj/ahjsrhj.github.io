@@ -10,7 +10,7 @@ tags:
 - Java
 - 网络请求
 ---
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1frc66u6yzwj30jg03uaaa.jpg)
+![](https://i.loli.net/2019/06/14/5d035d665a7e196570.png)
 
 平时在进行 Android 开发的时候，如果需要进行网络请求，一般都会选择使用**HttpURLConnection** 和 **HttpClient**。但是这两个用起来实在太过繁琐，需要设置一大堆，如果不封装的话，代码的复用率太低，所以就有了Android 的网络通信框架，比如 [**AsyncHttpClient**](https://github.com/AsyncHttpClient/async-http-client),这是一个异步的网络请求框架，使用它不必考虑线程的问题，其网络请求都在非 UI 线程中执行。还有就是 [**Volley**](http://developer.android.com/intl/zh-cn/training/volley/index.html)，其优点在于处理小文件的 http 请求，在下载大文件的时候性能就比较糟糕了。最后是[**okhttp**](https://github.com/square/okhttp)，它是Android版Http客户端。非常高效，支持SPDY、连接池、GZIP和 HTTP 缓存。还有今天的主角，[**Retrofit**](http://square.github.io/retrofit/)。
 

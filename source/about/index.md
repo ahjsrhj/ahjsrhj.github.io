@@ -6,7 +6,7 @@ comments: true
 ---
 
 # <center>关于作者</center>
-<center>![](https://ws4.sinaimg.cn/large/006tNc79gy1fvrj7xnilkj30a00a0djr.jpg)</center> 
+<!-- <center>![](https://ws4.sinaimg.cn/large/006tNc79gy1fvrj7xnilkj30a00a0djr.jpg)</center>  -->
 
 <center> **任洪建** </center>
 <br/>

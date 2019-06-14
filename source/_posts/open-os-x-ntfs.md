@@ -16,7 +16,7 @@ tags:
 
 # 第一步
 打开**磁盘工具**，找到你的NTFS分区，点击简介，记录下该盘的**UUID**。
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1frc66kvif5j30ki0b8abx.jpg)
+![](https://i.loli.net/2019/06/14/5d035d21eec7517228.png)
 
 可以看到，我的磁盘的**UUID**是`7AFE520E-E3A3-46CA-A971-7AC7D5B55331`
 

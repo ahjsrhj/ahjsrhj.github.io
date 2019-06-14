@@ -9,7 +9,7 @@ tags:
 - Travis CI
 ---
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1frc67mbkoej30jg0cr3zc.jpg)
+![1560516703395.png](https://i.loli.net/2019/06/14/5d039861a161221107.png)
 
 一直想去学习markdown的使用，最近发现了一个静态博客[Hexo](https://hexo.io/zh-cn/)很好用，趁着最近清闲下来，学着将博客转移到hexo上,使用静态页面。
 
@@ -78,7 +78,7 @@ branches:
 
     生成之后把public key里的信息复制到你的repo的`Deploy keys`那里，如下。
 
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7vte7gj30sr0lfwg6.jpg)
+![1560516722159.png](https://i.loli.net/2019/06/14/5d0398755786b47960.png)
     不应该添加到账户的`SSH and GPG keys`，这样能够限制key的权限只在当前项目。
 ## 加密Deploy Key
 1. 安装Travis命令行工具，并登录

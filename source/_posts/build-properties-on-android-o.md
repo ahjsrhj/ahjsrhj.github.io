@@ -10,8 +10,6 @@ tags:
 - Android O
 description: "在Android O中获取BuildProperties文件信息"
 ---
-<!-- ![https://o5iqfmxl6.qnssl.com//blog/img/android-o-1.png](https://ws4.sinaimg.cn/large/006tNc79gy1fvrj7pvh3wj30lo0c7465.jpg) -->
-
 <!-- more -->
 
 

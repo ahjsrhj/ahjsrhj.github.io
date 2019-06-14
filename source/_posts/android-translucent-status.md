@@ -19,11 +19,11 @@ description: "Android透明状态栏探索"
 
 之后布局的内容会顶到顶栏。但是这种情况下`ActionBar`也会被顶栏遮挡，如图:
 
-<center>![](https://ws3.sinaimg.cn/large/006tKfTcgy1frc664asj1j30ay049gll.jpg)</center>
+<center>![1560501261744.png](https://i.loli.net/2019/06/14/5d035c0e5e86551230.png)</center>
 
 此时有两种解决方法，一是给根布局添加`android:fitsSystemWindows="true"`属性，将`StatusBar`空出来。但是。。。
 
-<center>![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7r4n27j30al03y0sq.jpg)</center>
+<center>![](https://i.loli.net/2019/06/14/5d035c363ffa040545.png)</center>
 
 咳，大概是打开的方式不对，换种方式再来。
 
@@ -80,10 +80,10 @@ protected void onCreate(Bundle savedInstanceState) {
 
 - Android 4.4：
 
-<center>![](https://ws1.sinaimg.cn/large/006tNc79gy1fvrj7s2bpoj30b003zdfs.jpg)</center>
+<center>![](https://i.loli.net/2019/06/14/5d035ca0b8ec439606.png)</center>
 
 - Android 4.1:
 
-<center>![](https://ws3.sinaimg.cn/large/006tNc79gy1fvrj7shq23j30ba052mx8.jpg)</center>
+<center>![](https://i.loli.net/2019/06/14/5d035cb2e843e36613.png)</center>
 
 

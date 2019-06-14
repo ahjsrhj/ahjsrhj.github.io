@@ -10,7 +10,7 @@ tags:
 - Github webhook
 ---
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1frc67cxvbhj30jg0a8gng.jpg)
+![1560516636183.png](https://i.loli.net/2019/06/14/5d03981e83eea35252.png)
 
 >由于Github Page这两天间歇性抽风，因此打算将Hexo在我的腾讯云服务器上做一份镜像存储。考虑到每次更新博文都要手动传上去太麻烦，最开始打算使用Travis CI在自动部署的时候同时向我的VPS上传输一份文件镜像，但是这样的话需要使用ftps,Travis CI上还要为私匙加密。折腾起来太麻烦。
 
@@ -21,7 +21,7 @@ tags:
 
 # 1. 在github上设置webhook
 打开你的项目，选择Settings->Webhooks & services->Add webhook，在这个页面添加一个webhook。如图所示。
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fvrj7uvw8oj30jg0dudii.jpg)
+![](https://i.loli.net/2019/06/14/5d0398441874465489.png)
 - **Payload URL**: 在此输入服务器地址，比如我的是http://imrhj.tk:7777
 - **Content type**: 这一项保持默认不要动，因为我们接下来要用到`github-webhook-handler`去监听Gtihub发送到服务器上的请求，而`github-webhook-handler`智能解析json数据。~~当然如果你要自己实现服务端监听的话，当我没说~~
 - **Secret**: 密匙信息，建议输入一段随机字符串。用来进行身份鉴别，防止别人恶意向你的服务器发送请求。在接下来服务器端要用到。
