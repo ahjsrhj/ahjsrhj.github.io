@@ -8,12 +8,12 @@ comments: true
 # <center>关于作者</center>
 <!-- <center>![](https://ws4.sinaimg.cn/large/006tNc79gy1fvrj7xnilkj30a00a0djr.jpg)</center>  -->
 
-<center> **任洪建** </center>
+<!-- <center> **任洪建** </center> -->
 <br/>
-<center> *Android狗一只。 * </center>
+<center> *前端狗一只。 * </center>
 <center> *mail: <hexrhj@gmail.com>* </center>
 <center> *QQ: 945935700* </center>
-<center> *坐标: 杭州* </center>
+<center> *坐标: 上海* </center>
 <center> [*Github*](https://github.com/ahjsrhj) </center>
 <br/>
 <br/>
