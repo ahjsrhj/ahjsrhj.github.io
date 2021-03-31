@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta name=generator content="Hexo 3.9.0"><meta charset=utf-8><meta name=X-UA-Compatible content="IE=edge"><title>Hexer</title><meta name=description content=十年饮冰，难凉热血。><meta name=viewport content="width=device-width, initial-scale=1"><link rel=icon href=https://i.loli.net/2018/12/05/5c07807cb76f9.png><link rel=stylesheet href=/css/apollo.css><link rel=search type=application/opensearchdescription+xml href=https://imrhj.cn/atom.xml title=Hexer></head><body><div class=wrap><header><a href="/" class=logo-link><img src=https://i.loli.net/2018/12/05/5c07807cb76f9.png alt=logo></a><ul class="nav nav-list"><li class=nav-list-item><a href="/" target=_self class=nav-list-link>BLOG</a></li><li class=nav-list-item><a href="/archives/" target=_self class=nav-list-link>ARCHIVE</a></li><li class=nav-list-item><a href="/about/" target=_self class=nav-list-link>ABOUT</a></li><li class=nav-list-item><a href=https://github.com/ahjsrhj target=_blank class=nav-list-link>GITHUB</a></li><li class=nav-list-item><a href="/friend/" target=_self class=nav-list-link>FRIEND</a></li></ul><script src=/js/canvas-nest-check.js></script></header><main class=container><ul class="home post-list"><li class=post-list-item><article class=post-block><h2 class=post-title><a href="/2016/Retrofit2-learn/" class=post-title-link>Retrofit2学习笔记</a></h2><div class=post-info>2016年4月16日</div><div class=post-content><p><img src=https://i.loli.net/2019/06/14/5d035d665a7e196570.png></p><p>平时在进行 Android 开发的时候，如果需要进行网络请求，一般都会选择使用<strong>HttpURLConnection</strong> 和 <strong>HttpClient</strong>。但是这两个用起来实在太过繁琐，需要设置一大堆，如果不封装的话，代码的复用率太低，所以就有了Android 的网络通信框架，比如 <a href=https://github.com/AsyncHttpClient/async-http-client target=_blank rel=noopener><strong>AsyncHttpClient</strong></a>,这是一个异步的网络请求框架，使用它不必考虑线程的问题，其网络请求都在非 UI 线程中执行。还有就是 <a href=http://developer.android.com/intl/zh-cn/training/volley/index.html target=_blank rel=noopener><strong>Volley</strong></a>，其优点在于处理小文件的 http 请求，在下载大文件的时候性能就比较糟糕了。最后是<a href=https://github.com/square/okhttp target=_blank rel=noopener><strong>okhttp</strong></a>，它是Android版Http客户端。非常高效，支持SPDY、连接池、GZIP和 HTTP 缓存。还有今天的主角，<a href="http://square.github.io/retrofit/" target=_blank rel=noopener><strong>Retrofit</strong></a>。</p></div><a href="/2016/Retrofit2-learn/" class=read-more>...more</a></article></li><li class=post-list-item><article class=post-block><h2 class=post-title><a href="/2016/use-github-webhook/" class=post-title-link>将网站转到vps上做镜像存储</a></h2><div class=post-info>2016年4月9日</div><div class=post-content><p><img src=https://i.loli.net/2019/06/14/5d03981e83eea35252.png alt=1560516636183.png></p><blockquote><p>由于Github Page这两天间歇性抽风，因此打算将Hexo在我的腾讯云服务器上做一份镜像存储。考虑到每次更新博文都要手动传上去太麻烦，最开始打算使用Travis CI在自动部署的时候同时向我的VPS上传输一份文件镜像，但是这样的话需要使用ftps,Travis CI上还要为私匙加密。折腾起来太麻烦。</p></blockquote></div><a href="/2016/use-github-webhook/" class=read-more>...more</a></article></li><li class=post-list-item><article class=post-block><h2 class=post-title><a href="/2016/open-os-x-ntfs/" class=post-title-link>打开Mac OS X原生NTFS功能</a></h2><div class=post-info>2016年4月8日</div><div class=post-content></div><a href="/2016/open-os-x-ntfs/" class=read-more>...more</a></article></li><li class=post-list-item><article class=post-block><h2 class=post-title><a href="/2016/use-hexo-blog/" class=post-title-link>将博客从WordPress迁移到Hexo</a></h2><div class=post-info>2016年4月6日</div><div class=post-content><p><img src=https://i.loli.net/2019/06/14/5d039861a161221107.png alt=1560516703395.png></p><p>一直想去学习markdown的使用，最近发现了一个静态博客<a href="https://hexo.io/zh-cn/" target=_blank rel=noopener>Hexo</a>很好用，趁着最近清闲下来，学着将博客转移到hexo上,使用静态页面。</p></div><a href="/2016/use-hexo-blog/" class=read-more>...more</a></article></li></ul></main><footer><div class=paginator><a href="/" class=prev>PREV</a></div><div class=copyright><p>© 2015 - 2021 <a href=https://imrhj.cn>Hexer</a>, <a href="http://beian.miit.gov.cn/" target=_blank>皖ICP备16006159号-1</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity=sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW crossorigin=anonymous></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-109294877-1",'auto');ga('send','pageview');</script><script>var comments = '';
+if (comments === 'true') {
+    (function() {
+        let _tt = 20;
+        let _tc = setInterval(() => {
+            try {
+                new Valine({
+                    el: '#comment' ,
+                    notify:false, 
+                    verify:false, 
+                    appId: 'lMIQlAfa6UoprWfiEDOceMSz-gzGzoHsz',
+                    appKey: 'KiGYzc5UupBdbac67AJA54dJ',
+                    placeholder: '来都来了，说点啥不 ٩(●˙▿˙●)۶…⋆ฺ',
+                    path:window.location.pathname, 
+                    avatar:'identicon',
+                    guest_info: ['nick','link']
+                });
+                clearInterval(_tc)
+            } catch(e) {
+                _tt--;
+                if (_tt < 1) {
+                    clearInterval(_tc)
+                }
+            }
+        }, 500)
+    })();
+}</script></body></html>

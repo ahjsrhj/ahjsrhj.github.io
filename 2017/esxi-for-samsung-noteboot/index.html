@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta name=generator content="Hexo 3.9.0"><meta charset=utf-8><meta name=X-UA-Compatible content="IE=edge"><title>在闲置笔记本上安装ESXi的坑 · Hexer</title><meta name=description content="在闲置笔记本上安装ESXi的坑 - Hexer"><meta name=viewport content="width=device-width, initial-scale=1"><link rel=icon href=https://i.loli.net/2018/12/05/5c07807cb76f9.png><link rel=stylesheet href=/css/apollo.css><link rel=search type=application/opensearchdescription+xml href=https://imrhj.cn/atom.xml title=Hexer></head><body><div class=wrap><header><a href="/" class=logo-link><img src=https://i.loli.net/2018/12/05/5c07807cb76f9.png alt=logo></a><ul class="nav nav-list"><li class=nav-list-item><a href="/" target=_self class=nav-list-link>BLOG</a></li><li class=nav-list-item><a href="/archives/" target=_self class=nav-list-link>ARCHIVE</a></li><li class=nav-list-item><a href="/about/" target=_self class=nav-list-link>ABOUT</a></li><li class=nav-list-item><a href=https://github.com/ahjsrhj target=_blank class=nav-list-link>GITHUB</a></li><li class=nav-list-item><a href="/friend/" target=_self class=nav-list-link>FRIEND</a></li></ul><script src=/js/canvas-nest-check.js></script></header><main class=container><div class=post><article class=post-block><h1 class=post-title>在闲置笔记本上安装ESXi的坑</h1><div class=post-info>2017年11月25日</div><div class=post-content><h1 id=0x00><a href=#0x00 class=headerlink title=0x00></a>0x00</h1><p>大学时用的笔记本是爆炸星的<strong>370R5E</strong>,3代i3的处理器，显卡 8750m，性能还不错~在寝室的时候就靠它打游戏了。不过从工作了之后（事实上从大三常年泡在学校网络中心之后），这台本子基本处于闲置状态，前段时间突发奇想，把它拎出来装了个群晖当做NAS<del>(其实只是用来备份MBP)</del>，结果才发现免费撸的K2 LAN 口都是百兆的。百兆的局域网备份。。我还不如用移动硬盘呢。再加上K2上跑了一堆东西，性能已经是不太够了，趁着换掉它。于是入了洋垃圾<strong>R6300V2</strong>。</p><p>咳，说了一堆目前跟文章没什么关联，前段时间双十一忽悠基友上车买了PS4 slim，这段时间一直跟他开黑。坑爹的小米插座插满了，ps4没地方插了，于是打游戏的时候就把 NAS 电源拔了，<del>于是就忘了插，</del>所以 NAS 罢工很多天了。今天突(xian)发(de)奇(dan)想(teng)，把群晖系统干掉了(<del>其实就是把引导U盘给格式化了</del>)，然后打算装个ESXi玩玩。碰到了几个坑，记录如下:</p><h1 id=0X01-nfs41client-failed-to-load><a href=#0X01-nfs41client-failed-to-load class=headerlink title="0X01 nfs41client failed to load"></a>0X01 nfs41client failed to load</h1><p>这个问题Google了一下，官方论坛说的是需要<strong>10/100/1000M</strong>有线网卡才可以，具体搜索实际的原因是网卡未被识别， <strong>RTL8111</strong> 网卡驱动未被包含在 ESXi 5.5 的包里面，所以需要解包安装镜像，将驱动打入然后重新打包。<br>详细解决方案在<a href="https://opoo.org/2015/install-vmware-esxi-6.0-with-88se9230-and-rtl8111e/" target=_blank rel=noopener>这里</a></p><ul><li>下载工具 <a href=http://www.v-front.de/p/esxi-customizer.html#download target=_blank rel=noopener>ESXi-Customizer</a></li><li>下载 <a href=http://vibsdepot.v-front.de/depot/vft/net51-drivers-1.0/net51-drivers-1.0.0-1vft.510.0.0.799733.x86_64.vib target=_blank rel=noopener>Realtek RTL8111e 驱动</a></li><li>解压并打开 <strong>ESXi-Customizer</strong>，运行后弹出软件窗口第一个选择ESXi安装镜像，我的是5.5，第二个选择下载的网卡驱动。这里注意如果看不到 .vib 驱动文件，需要在弹出选择文件窗口中选择文件类型。之后生成即可。</li></ul><blockquote><p>需要注意的是，这款软件不支持Win10，用记事本打开脚本，搜索 <strong>unsupport</strong>，在那一行前面添加<strong>REM</strong>即可<img src=https://i.loli.net/2019/06/14/5d035cfa8b92226127.png><br>生成后建议使用<a href="http://rufus.akeo.ie/?locale=zh_CN" target=_blank rel=noopener>rufus</a>进行u盘的烧录。</p></blockquote><h1 id=0x02-Failed-to-Validate-Acceptance-Level-Failed-to-Check-Acceptance-Level-None><a href=#0x02-Failed-to-Validate-Acceptance-Level-Failed-to-Check-Acceptance-Level-None class=headerlink title="0x02 Failed to Validate Acceptance Level. Failed to Check Acceptance Level: None"></a>0x02 Failed to Validate Acceptance Level. Failed to Check Acceptance Level: None</h1><p>这个问题比较好解决，重启笔记本，进入BIOS，将系统安全引导(<a href=http://www.ruanyifeng.com/blog/2013/01/secure_boot.html target=_blank rel=noopener>Secure Boot</a>）关掉即可。</p><h1 id=0x03-PCPU-0-locked-up-failed-to-ack-TLB-invalidate><a href=#0x03-PCPU-0-locked-up-failed-to-ack-TLB-invalidate class=headerlink title="0x03 PCPU 0 locked up. failed to ack TLB invalidate"></a>0x03 PCPU 0 locked up. failed to ack TLB invalidate</h1><p>之后就是碰到了这个问题，搜索一番没有任何<a href=https://kb.vmware.com/s/article/2091670 target=_blank rel=noopener>收获</a>，猜测是因为我安装的系统版本为 ESXi 6.5, 而在<strong>0x01</strong>中附加网卡驱动所用到的打包工具所支持的最高版本为 ESXi5.5，重新下载5.5版的镜像并把驱动打入即可。</p><h1 id=0x04-尝试升级至-ESXi-6-5><a href=#0x04-尝试升级至-ESXi-6-5 class=headerlink title="0x04 尝试升级至 ESXi 6.5"></a>0x04 尝试升级至 ESXi 6.5</h1><p>先说一下结果，以失败告终。</p><ol><li>下载6.5镜像使用<strong>ESXi-Customizer</strong>将驱动打入，全新安装<br>结果:<blockquote><p>安装无法继续，进度条还没读完就报错#0x03</p></blockquote></li><li>下载6.5镜像使用<a href=http://www.v-front.de/p/esxi-customizer-ps.html target=_blank rel=noopener><strong>ESXi-Customizer-PS</strong></a>将驱动打入，全新安装<br>结果:<blockquote><p>因为开始用的<strong>ESXi-Customizer</strong>是不支持win10以及6.5版的系统的，猜测上一次安装失败是因为打出来的安装镜像有问题导致的，因此使用最新版本支持win10以及6.5版本ESXi的工具重新打包安装，结果仍然失败，报错#0x03</p></blockquote></li><li>安装5.5版本系统成功后，下载6.5升级包，在终端进行系统升级<br>结果:<blockquote><p>失败。启动时报错#0x03。</p></blockquote></li></ol><p><em>经过尝试发现这台机器以我现有的技术手段无法安装最新版ESXi，因此还是老老实实使用5.5版的系统吧。以上~</em></p></div></article></div></main><footer><div class=paginator><a href="/2017/android-textinputlayout-error/" class=prev>PREV</a><a href="/2017/react-native-webview-auto-height/" class=next>NEXT</a></div><script>var comments = 'true';
+if (comments === 'true') {
+    (function() {
+        var vl = document.createElement('script');
+        vl.src = '//cdn1.lncld.net/static/js/3.0.4/av-min.js';
+        vl.async = true;
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(vl);
+        var vl2 = document.createElement('script');
+        vl2.src = '//unpkg.com/valine/dist/Valine.min.js';
+        vl2.async = true;
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(vl2);
+        var commitDiv = document.createElement('div');
+        commitDiv.id='comment';
+        document.getElementsByTagName('footer')[0].appendChild(commitDiv);
+    })();
+}</script><div class=copyright><p>© 2015 - 2021 <a href=https://imrhj.cn>Hexer</a>, <a href="http://beian.miit.gov.cn/" target=_blank>皖ICP备16006159号-1</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity=sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW crossorigin=anonymous></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-109294877-1",'auto');ga('send','pageview');</script><script>var comments = 'true';
+if (comments === 'true') {
+    (function() {
+        let _tt = 20;
+        let _tc = setInterval(() => {
+            try {
+                new Valine({
+                    el: '#comment' ,
+                    notify:false, 
+                    verify:false, 
+                    appId: 'lMIQlAfa6UoprWfiEDOceMSz-gzGzoHsz',
+                    appKey: 'KiGYzc5UupBdbac67AJA54dJ',
+                    placeholder: '来都来了，说点啥不 ٩(●˙▿˙●)۶…⋆ฺ',
+                    path:window.location.pathname, 
+                    avatar:'identicon',
+                    guest_info: ['nick','link']
+                });
+                clearInterval(_tc)
+            } catch(e) {
+                _tt--;
+                if (_tt < 1) {
+                    clearInterval(_tc)
+                }
+            }
+        }, 500)
+    })();
+}</script></body></html>
